@@ -1,0 +1,20 @@
+{
+  "name": "blackers-api-sdk",
+  "version": "0.0.1",
+  "description": "Developer kit for interacting with our API",
+  "main": "./lib/main.js",
+  "scripts": {
+    "start": "./lib/main.js",
+    "test": "node index.test.js"
+  },
+  "keywords": [
+    "api",
+    "sdk",
+    "blackerz"
+  ],
+  "author": "Ghosteez",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
