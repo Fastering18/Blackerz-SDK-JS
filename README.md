@@ -5,21 +5,23 @@ A developer kit for interact with our API.
 
 __Example node Post Bot Description__
 ```js
-const botFunctions = require("blackers-api-sdk")
+const blackerz = require("blackers-api-sdk")
 
-const gobloxBOT = new botFunctions.bot("v1 auth", "bot developer id");
-gobloxBOT.botId("bot id")
+blackerz.Authorize("V1auth", "bot developer id");
+const scannerBOT = new blackerz.bot("bot id")
 
-gobloxBOT.edit({
-    shortDescription: "new description here, test test"
+scannerBOT.edit({
+    shortDescription: "test test lagi ok"
 }).then(result => {
-    console.log(`${result} bisa`)
-}).catch(err => {
-    console.log(err)
-})
+    console.log(`${JSON.stringify(result)} sucess`)
+}).catch(console.error)
+
+scannerBOT.botData().then(console.log).catch(console.error)
+
 ```
 
-Get your v1 auth by visiting our website then click your profile
+Get your **V1 auth** by login to our website then visit your profile, here the link  
+https://blackerz.herokuapp.com/
 
 <br>
-Developed by Offical Blackerz, join our [Discord server](https://discord.gg/t7zJBwynFU) for more info.
+Developed by Offical Blackerz, join our https://discord.gg/t7zJBwynFU for more information.
