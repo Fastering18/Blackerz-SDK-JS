@@ -17,7 +17,6 @@
     "url": "git://github.com/Fastering18/Blackerz-SDK.git"
   },
   "author": "Ghosteez",
-  "license": "ISC",
   "dependencies": {
     "node-fetch": "^2.6.1"
   }
