@@ -1,15 +1,15 @@
 // Blackerz API SDK by Fastering18
 // More info join our Discord server
 
-const botFunctions = require("./lib/main")
+const blackerz = require("blackers-api-sdk")
 
-const goblox = new botFunctions.bot("v1 auth", "bot developer id");
-goblox.botId("bot id")
+botFunctions.Authorize("V1auth", "bot developer id");
+const goblox = new botFunctions.bot("bot id")
 
 goblox.edit({
-    shortDescription: "test test"
+    shortDescription: "test test lagi ok"
 }).then(result => {
-    console.log(`${result} wow bisa`)
-}).catch(err => {
-    console.log(err)
-})
+    console.log(`${JSON.stringify(result)} sucess`)
+}).catch(console.error)
+
+goblox.botData().then(console.log).catch(console.error)
