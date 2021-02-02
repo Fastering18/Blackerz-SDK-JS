@@ -1,6 +1,6 @@
 {
   "name": "blackers-api-sdk",
-  "version": "0.0.1",
+  "version": "0.0.35",
   "description": "Developer kit for interacting with our API",
   "main": "./lib/main.js",
   "scripts": {
@@ -12,6 +12,10 @@
     "sdk",
     "blackerz"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Fastering18/Blackerz-SDK.git"
+  },
   "author": "Ghosteez",
   "license": "ISC",
   "dependencies": {
