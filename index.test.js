@@ -1,7 +1,7 @@
 // Blackerz API SDK by Fastering18
 // More info join our Discord server
 
-const blackerz = require("blackerz-api-sdk")
+const blackerz = require("blackers-api-sdk")
 
 botFunctions.Authorize("V1auth", "bot developer id");
 const goblox = new botFunctions.bot("bot id")
