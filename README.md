@@ -1,4 +1,4 @@
-# Blackerz-SDK
+# Blackerz-SDK ![travis-ci](https://travis-ci.com/Fastering18/Blackerz-SDK-JS.svg?branch=main&status=passed)
 A developer kit for interact with our API.
 
 <br>
