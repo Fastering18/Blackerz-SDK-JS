@@ -11,7 +11,7 @@ const blackerz = require("blackers-api-sdk")
 blackerz.botData("777756503028400138").then(console.log)
 
 // Sync with your bot, require auth
-blackerz.Authorize("V1auth", "bot developer id");
+blackerz.Authorize("V1auth");
 const scannerBOT = new blackerz.bot("bot id")
 
 scannerBOT.edit({
