@@ -1,9 +1,11 @@
 // Blackerz API SDK by Fastering18
 // More info join our Discord server
 
-const blackerz = require("blackers-api-sdk")
+const blackerz = require("./lib/main.js")
 
-botFunctions.Authorize("V1auth", "bot developer id");
+blackerz.botData("717660707650273280").then(console.log).catch(console.error)
+
+/*botFunctions.Authorize("V1auth");
 const goblox = new botFunctions.bot("bot id")
 
 goblox.edit({
@@ -12,4 +14,4 @@ goblox.edit({
     console.log(`${JSON.stringify(result)} sucess`)
 }).catch(console.error)
 
-goblox.botData().then(console.log).catch(console.error)
+goblox.botData().then(console.log).catch(console.error)*/
