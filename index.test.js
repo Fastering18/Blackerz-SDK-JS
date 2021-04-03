@@ -1,17 +1,26 @@
 // Blackerz API SDK by Fastering18
 // More info join our Discord server
 
-const blackerz = require("./lib/main.js")
+const blackerz = require("./lib/main")
 
-blackerz.botData("717660707650273280").then(console.log).catch(console.error)
+blackerz.botData("777756503028400138", {baseURL: "https://blackerz.tk"}).then(console.log).catch(console.error)
 
-/*botFunctions.Authorize("V1auth");
-const goblox = new botFunctions.bot("bot id")
+
+/* Sync with your bot*/
+
+/*
+blackerz.Authorize("auth v1");
+
+const goblox = new blackerz.bot("bot id or client", {baseURL: "https://blackerz.herokuapp.com"})
+
+goblox.checkVote("user id to check").then(console.log).catch(console.error)
 
 goblox.edit({
-    shortDescription: "test test lagi ok"
+    shortDescription: "Discord bot Goblox allow you to calculate number, moderate server, get account information from roblox, etc.",
+    longDescription: "# lol"
 }).then(result => {
     console.log(`${JSON.stringify(result)} sucess`)
 }).catch(console.error)
 
-goblox.botData().then(console.log).catch(console.error)*/
+goblox.botData().then(console.log).catch(console.error)
+*/
