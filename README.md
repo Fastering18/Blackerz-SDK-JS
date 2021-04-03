@@ -12,18 +12,18 @@ blackerz.botData("777756503028400138").then(console.log)
 
 // Sync with your bot, require auth
 blackerz.Authorize("V1auth");
-const scannerBOT = new blackerz.bot("bot id")
+const scannerBOT = new blackerz.bot("bot id", {baseURL: "https://blackerz.herokuapp.com"}) // baseURL optional  
 
 scannerBOT.edit({
-    shortDescription: "test test lagi ok"
+    shortDescription: "this is short description"
 }).then(result => {
-    console.log(`${JSON.stringify(result)} sucess`)
+    console.log(`${JSON.stringify(result)}, sucess edited`)
 }).catch(console.error)
 
 scannerBOT.botData().then(console.log).catch(console.error)
 
 //Check user vote
-scannerBOT.checkVote("775363892167573535").then(console.log).catch(console.error)
+scannerBOT.checkVote("775363892167573535").then(console.log).catch(console.error) // true / false  
 ```  
 ## API  
 `blackerz.botData(BOT_ID)`  
@@ -42,4 +42,4 @@ Get your **V1 auth** by login to our website then visit your profile, here the l
 https://blackerz.herokuapp.com/
 
 <br>
-Developed by Offical Blackerz, join our [Discord server](https://discord.gg/t7zJBwynFU) for more information.
+Developed by Offical Blackerz, join our [discord server](https://discord.gg/k8mW3DPJpH) for more information.
