@@ -1,8 +1,9 @@
 {
   "name": "blackers-api-sdk",
-  "version": "0.0.47",
+  "version": "0.0.52",
   "description": "Developer kit for interacting with our API",
   "main": "./lib/main.js",
+  "types": "./lib/main.d.ts",
   "scripts": {
     "start": "node ./lib/main.js",
     "test": "node index.test.js"
@@ -19,5 +20,8 @@
   "author": "Fastering18 (Ghosteez)",
   "dependencies": {
     "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/es6-promise": "^3.3.0"
   }
 }

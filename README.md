@@ -1,5 +1,6 @@
 # Blackerz-SDK ![travis-ci](https://travis-ci.com/Fastering18/Blackerz-SDK-JS.svg?branch=main&status=passed)
-A developer kit for interact with our API.
+A developer kit for interact with our API.  
+> Added type definition and more edit data.  
 
 <br>
 
@@ -15,7 +16,8 @@ blackerz.Authorize("V1auth");
 const scannerBOT = new blackerz.bot("bot id", {baseURL: "https://blackerz.herokuapp.com"}) // baseURL optional  
 
 scannerBOT.edit({
-    shortDescription: "this is short description"
+    shortDescription: "this is short description",
+    longDescription: "this is looooong description"
 }).then(result => {
     console.log(`${JSON.stringify(result)}, sucess edited`)
 }).catch(console.error)
@@ -33,7 +35,7 @@ return bot data without authorization
 authorize your access, can be used to construct bot class  
 
 `new blackerz.bot(BOT_ID)`  
-return object class to to domething with bot  
+return object class to to something with bot  
 
 
 ## Website  
